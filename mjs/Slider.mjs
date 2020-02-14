@@ -25,7 +25,8 @@ export class Slider {
             elmSlide.appendChild(elmImg)
 
             let elmTitre = document.createElement('titre')
-            elmTitre
+            elmTitre.src = unSlide.elmTitre
+            elmSlide.appendChild(elmTitre)
 
         }
         elmSlider.appendChild(elmSlides)
