@@ -20,6 +20,7 @@ export class Slider {
             elmSlide.id = 'slides-' + k
             k++
             elmSlides.appendChild(elmSlide)
+
             let elmImg = document.createElement('img')
             elmImg.src = unSlide.img
             elmSlide.appendChild(elmImg)
@@ -28,6 +29,9 @@ export class Slider {
             elmTitre.src = unSlide.elmTitre
             elmSlide.appendChild(elmTitre)
 
+            let elmSousTitre = document.createElement('sousTitre')
+            elmSousTitre.src = unSlide.elmSousTitre
+            elmSlide.appendChild(elmSousTitre)
         }
         elmSlider.appendChild(elmSlides)
         this.elmMonSlider.appendChild(elmSlider)
