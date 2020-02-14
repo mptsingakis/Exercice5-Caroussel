@@ -21,6 +21,9 @@ export class Slider {
             k++
             elmSlides.appendChild(elmSlide)
 
+            let btnSlide = document.createElement('a')
+            
+
             let elmImg = document.createElement('img')
             elmImg.src = unSlide.img
             elmSlide.appendChild(elmImg)

@@ -138,6 +138,7 @@ img {
     justify-content: center;
     background: linear-gradient(to bottom, #74ABE2, #5563DE);
     font-family: 'Ropa Sans', sans-serif;
-     overflow: hidden;
+    overflow: hidden;
 }
 //ajouter media query
+@media screen and (max-width: 992px)
