@@ -25,12 +25,12 @@ export class Slider {
             elmImg.src = unSlide.img
             elmSlide.appendChild(elmImg)
 
-            let elmTitre = document.createElement('titre')
-            elmTitre.src = unSlide.elmTitre
+            let elmTitre = document.createElement('h2')
+            elmTitre.innerHTML= unSlide.titre
             elmSlide.appendChild(elmTitre)
 
-            let elmSousTitre = document.createElement('sousTitre')
-            elmSousTitre.src = unSlide.elmSousTitre
+            let elmSousTitre = document.createElement('p')
+            elmSousTitre.innerHTML= unSlide.sousTitre
             elmSlide.appendChild(elmSousTitre)
         }
         elmSlider.appendChild(elmSlides)
