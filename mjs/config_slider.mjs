@@ -10,7 +10,7 @@ export const config_slider = {
             img : 'img/01_portfolio.jpg'
         },
         {
-            titre : 'Lourde charge de travaille',
+            titre : 'Encore',
             sousTitre : 'Épuisement scolaire stade 3',
             img : 'img/02_portfolio.jpg'
         },

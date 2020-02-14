@@ -21,20 +21,25 @@ export class Slider {
             k++
             elmSlides.appendChild(elmSlide)
 
-            let btnSlide = document.createElement('a')
+            /*balise a pour les boutons sous le carrousel */
+            let elmBtn = document.createElement('a')
+            //elmBtn.innerHTML
             
 
-            let elmImg = document.createElement('img')
-            elmImg.src = unSlide.img
-            elmSlide.appendChild(elmImg)
-
+            /*balise h2 pour le titre */
             let elmTitre = document.createElement('h2')
             elmTitre.innerHTML= unSlide.titre
             elmSlide.appendChild(elmTitre)
 
+            /*balise p pour le sous-titre */
             let elmSousTitre = document.createElement('p')
             elmSousTitre.innerHTML= unSlide.sousTitre
             elmSlide.appendChild(elmSousTitre)
+
+            /*balise Image */
+            let elmImg = document.createElement('img')
+            elmImg.src = unSlide.img
+            elmSlide.appendChild(elmImg)
         }
         elmSlider.appendChild(elmSlides)
         this.elmMonSlider.appendChild(elmSlider)

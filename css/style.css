@@ -1060,10 +1060,22 @@ scroll-snap-type: mandatory;
 
 .slides div h2 {
   font-size: 1.5rem;
+  z-index: 100;
+  position: absolute;
+  top: -20px;
+  background-color: rgba(0, 0, 0, 0.219);
+  color: #111111;
+  width: 100%;
 }
 
 .slides div p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  z-index: 100;
+  position: absolute;
+  bottom: -19px;
+  background-color: rgba(0, 0, 0, 0.219);
+  color: #111111;
+  width: 100%;
 }
 
 .slides::-webkit-scrollbar {
@@ -1196,8 +1208,8 @@ img {
 ---------------------------------------------------------------- */
 @-webkit-keyframes animEntete {
   from {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
   }
   to {
     -webkit-transform: translateX(0px);
@@ -1206,8 +1218,8 @@ img {
 }
 @keyframes animEntete {
   from {
-    -webkit-transform: translateX(1000px);
-            transform: translateX(1000px);
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
   }
   to {
     -webkit-transform: translateX(0px);
