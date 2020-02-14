@@ -157,16 +157,6 @@ img {
 
 }
 
-/* Don't need button navigation */
-/*
-@supports (scroll-snap-type) {
-    .slider>a {
-        display: none;
-    }
-}
-*/
-
-
 .mon-slider {
     display: flex;
     align-items: center;
@@ -179,15 +169,25 @@ img {
 
 //ajouter media query
 @media screen and (max-width: 400px){
-    .slider,.slides, img{
+    .slider,.slides{
+        width: 200px;
+    }
+    
+    .slider>nav{
+        width: 200px;
+    }
+    .slides>div{
         width: 200px;
         height: 200px;
     }
-    .slider>nav{
-        width: 100px;
+    .slides>div>h2{
+        
+            font-size: 1rem;
+            top:-10px;
     }
-    .slides>div{
-        width: 100px;
-        height: 100px;
+    .slides>div>p{
+            font-size :0.8rem;
+            bottom: 0px;
     }
+
 }
