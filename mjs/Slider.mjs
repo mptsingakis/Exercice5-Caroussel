@@ -15,16 +15,19 @@ export class Slider {
         let elmSlides = document.createElement('div')
         elmSlides.classList.add('slides')
         let k=1
+        let elmNav = document.createElement('nav')
         for (let unSlide of this.list_slide){
             let elmSlide = document.createElement('div')
             elmSlide.id = 'slides-' + k
-            k++
+            
             elmSlides.appendChild(elmSlide)
 
             /*balise a pour les boutons sous le carrousel */
             let elmBtn = document.createElement('a')
-            //elmBtn.innerHTML
-            
+            elmBtn.href = '#slides-'+ k
+            k++
+
+            elmNav.appendChild(elmBtn)
 
             /*balise h2 pour le titre */
             let elmTitre = document.createElement('h2')
@@ -41,7 +44,9 @@ export class Slider {
             elmImg.src = unSlide.img
             elmSlide.appendChild(elmImg)
         }
+       
         elmSlider.appendChild(elmSlides)
+        elmSlider.appendChild(elmNav)
         this.elmMonSlider.appendChild(elmSlider)
 
     }
