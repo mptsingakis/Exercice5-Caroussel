@@ -85,9 +85,6 @@ scroll-snap-type: mandatory;
     font-size: 100px;
 }
 
-.slides>div:target {
-    /* transform: scale(0.8); */
-}
 
 .author-info {
     background: rgba(0, 0, 0, 0.75);
@@ -181,4 +178,16 @@ img {
 
 
 //ajouter media query
-//@media screen and (max-width: 992px)
+@media screen and (max-width: 400px){
+    .slider,.slides, img{
+        width: 200px;
+        height: 200px;
+    }
+    .slider>nav{
+        width: 100px;
+    }
+    .slides>div{
+        width: 100px;
+        height: 100px;
+    }
+}
