@@ -16,7 +16,7 @@ export const config_slider = {
         },
         {
             titre : 'Le chat grincheux',
-            sousTitre : 'grumpy cat',
+            sousTitre : 'grumpy Cat',
             img : 'img/03_portfolio.jpg'
         }
 
